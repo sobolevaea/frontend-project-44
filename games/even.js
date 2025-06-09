@@ -1,4 +1,3 @@
-import runGame from '../src/index.js'
 import generateNumber from '../src/utils.js'
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".'
@@ -13,4 +12,4 @@ const runEven = () => {
   return [question, answer]
 }
 
-runGame(description, runEven)
+export { description, runEven }
