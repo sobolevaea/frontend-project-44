@@ -6,7 +6,7 @@ const isEven = number => number % 2 === 0
 
 const runEven = () => {
   const randomNumber = generateNumber()
-  const question = `Question: ${randomNumber}`
+  const question = String(randomNumber)
   const answer = isEven(randomNumber) ? 'yes' : 'no'
 
   return [question, answer]
