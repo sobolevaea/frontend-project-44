@@ -1,4 +1,3 @@
-import runGame from '../src/index.js'
 import generateNumber from '../src/utils.js'
 
 const description = ('What is the result of the expression?')
@@ -26,4 +25,4 @@ const runCalc = () => {
   return [question, answer]
 }
 
-runGame(description, runCalc)
+export { description, runCalc }
