@@ -7,3 +7,6 @@
 
 ## Calc game:
 [![asciicast](https://asciinema.org/a/UrAQUONYl72vvSia5GZOMlwEy.svg)](https://asciinema.org/a/UrAQUONYl72vvSia5GZOMlwEy)
+
+## Gcd game:
+[![asciicast](https://asciinema.org/a/SXPni1YwA2z6khojyqB5Ruqgs.svg)](https://asciinema.org/a/SXPni1YwA2z6khojyqB5Ruqgs)
