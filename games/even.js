@@ -6,9 +6,9 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 const isEven = number => number % 2 === 0
 
 const generateRound = () => {
-  const randomNumber = generateNumber()
-  const question = String(randomNumber)
-  const answer = isEven(randomNumber) ? 'yes' : 'no'
+  const number = generateNumber()
+  const question = String(number)
+  const answer = isEven(number) ? 'yes' : 'no'
 
   return [question, answer]
 }
