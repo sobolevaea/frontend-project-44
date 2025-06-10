@@ -3,21 +3,21 @@ import runGame from '../src/index.js'
 
 const description = ('Find the greatest common divisor of given numbers.')
 
-const findGcd = (number1, number2) => {
-  if (number2 === 0) {
-    return number1
+const findGcd = (value1, value2) => {
+  if (value2 === 0) {
+    return value1
   }
 
-  let operand1 = number1
-  let operand2 = number2
+  let a = value1
+  let b = value2
 
-  while (operand2 !== 0) {
-    const temp = operand1
-    operand1 = operand2
-    operand2 = temp % operand2
+  while (b !== 0) {
+    const temp = a
+    a = b
+    b = temp % b
   }
 
-  return operand1
+  return a
 }
 
 const generateRound = () => {
