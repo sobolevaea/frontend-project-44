@@ -1,4 +1,5 @@
 import generateNumber from '../src/utils.js'
+import runGame from '../src/index.js'
 
 const description = ('What is the result of the expression?')
 const operators = ['+', '-', '*']
@@ -14,7 +15,7 @@ const calc = (operand1, operand2, operator) => {
   }
 }
 
-const runCalc = () => {
+const generateRound = () => {
   const operator = operators[generateNumber(0, operators.length - 1)]
   const value1 = generateNumber()
   const value2 = generateNumber()
@@ -25,4 +26,6 @@ const runCalc = () => {
   return [question, answer]
 }
 
-export { description, runCalc }
+const runCalc = () => runGame(description, generateRound)
+
+export default runCalc
