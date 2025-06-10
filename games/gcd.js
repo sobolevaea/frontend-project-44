@@ -1,4 +1,5 @@
 import generateNumber from '../src/utils.js'
+import runGame from '../src/index.js'
 
 const description = ('Find the greatest common divisor of given numbers.')
 
@@ -7,16 +8,19 @@ const findGcd = (number1, number2) => {
     return number1
   }
 
-  while (number2 !== 0) {
-    const temp = number1
-    number1 = number2
-    number2 = temp % number2
+  let operand1 = number1
+  let operand2 = number2
+
+  while (operand2 !== 0) {
+    const temp = operand1
+    operand1 = operand2
+    operand2 = temp % operand2
   }
 
-  return number1
+  return operand1
 }
 
-const runGcd = () => {
+const generateRound = () => {
   const value1 = generateNumber()
   const value2 = generateNumber()
   const question = `${value1} ${value2}`
@@ -25,4 +29,6 @@ const runGcd = () => {
   return [question, answer]
 }
 
-export { description, runGcd }
+const runGcd = () => runGame(description, generateRound)
+
+export default runGcd
