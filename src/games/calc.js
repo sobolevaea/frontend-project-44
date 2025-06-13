@@ -1,5 +1,5 @@
-import generateNumber from '../src/utils.js'
-import runGame from '../src/index.js'
+import { generateNumber } from '../utils.js'
+import runGame from '../index.js'
 
 const description = ('What is the result of the expression?')
 const operators = ['+', '-', '*']
@@ -17,11 +17,11 @@ const calc = (operand1, operand2, operator) => {
 
 const generateRound = () => {
   const operator = operators[generateNumber(0, operators.length - 1)]
-  const value1 = generateNumber()
-  const value2 = generateNumber()
+  const number1 = generateNumber()
+  const number2 = generateNumber()
 
-  const question = `${value1} ${operator} ${value2}`
-  const answer = String(calc(value1, value2, operator))
+  const question = `${number1} ${operator} ${number2}`
+  const answer = String(calc(number1, number2, operator))
 
   return [question, answer]
 }

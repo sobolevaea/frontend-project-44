@@ -1,5 +1,5 @@
-import generateNumber from '../src/utils.js'
-import runGame from '../src/index.js'
+import { generateNumber } from '../utils.js'
+import runGame from '../index.js'
 
 const description = 'What number is missing in the progression?'
 const maxLength = 10
