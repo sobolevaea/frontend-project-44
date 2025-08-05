@@ -8,7 +8,7 @@ This project features 5 console games. Each game challenges you with 3 questions
 ## Getting Started
 1. Clone git repository
 ```
-git clone git@github.com:Gruf1/frontend-project-44.git
+git clone git@github.com:sobolevaea/frontend-project-44.git
 ```
 2. Move to the project folder
 ```
